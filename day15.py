@@ -18,7 +18,7 @@ divisor = 2147483647
 start_a = 783 #example 65
 start_b = 325 #example 8921
 count = 0
-for x in range(5000000):
+for x in range(5000000): # this is 40000000 for part 1
     start_a = (start_a * gena_factor) % divisor
     start_b = (start_b * genb_factor) % divisor
     start_a = thiscouldbebad(start_a, gena_factor, 4, divisor)
