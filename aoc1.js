@@ -18,4 +18,18 @@ rl.question('Enter the string:', (toParse) =>{
         }
     }
     console.log(sum_nums);
+    sum_nums = 0;
+    var steps = size_num/2
+     for(var x = 0;x<size_num;x++){
+         if(steps+x >= size_num){
+                next_comp = (steps+x) % size_num
+            } else {
+                next_comp = (steps+x)
+            }
+        
+        if(toParse.charAt(x) == toParse.charAt(next_comp))
+            sum_nums += Number(toParse.charAt(next_comp));
+        
+    }
+    console.log(sum_nums);
 });
